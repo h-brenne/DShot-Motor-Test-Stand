@@ -1,4 +1,5 @@
 # DShot-Motor-Test-Stand
+![Stand](/img/stand1.jpg)
 
 Motor test stand made for Ascend NTNU. 
 
@@ -6,3 +7,5 @@ Capable of measuring thrust, torque, voltage, current, rpm, motor temperature, E
 
 DShot implementation from JyeSmith.  
 https://github.com/JyeSmith/dshot-esc-tester
+
+CAD by Adrian Stokdal Opheim
