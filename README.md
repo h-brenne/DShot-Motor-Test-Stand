@@ -8,4 +8,4 @@ Capable of measuring thrust, torque, voltage, current, rpm, motor temperature, E
 DShot implementation from JyeSmith.  
 https://github.com/JyeSmith/dshot-esc-tester
 
-CAD model by Adrian Stokdal Opheim
+CAD by Adrian Stokdal Opheim
