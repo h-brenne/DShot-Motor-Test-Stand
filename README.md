@@ -9,3 +9,5 @@ DShot implementation from JyeSmith.
 https://github.com/JyeSmith/dshot-esc-tester
 
 CAD by Adrian Stokdal Opheim
+
+![plot](/Plots/XING4214_fulltest.png)
