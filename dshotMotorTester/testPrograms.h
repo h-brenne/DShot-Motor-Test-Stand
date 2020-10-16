@@ -22,3 +22,8 @@ void testProgram_fulltest();
 
 void testProgram_slowto50();
 void testProgram_slowto75();
+
+void testProgram_30sec_50();
+void testProgram_2min_50();
+void testProgram_2min_75();
+
