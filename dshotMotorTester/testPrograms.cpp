@@ -290,3 +290,53 @@ void testProgram_slowto75() {
     dshotUserInputValue = 0;
     }
   }
+
+void testProgram_2min_50() {
+  currentTime = millis()-startTime;
+  if(currentTime >= 10000 && currentTime < 15000) {
+    dshotUserInputValue = dshotidle;
+    }
+  else if(currentTime >= 15000 && currentTime < 25000) {      
+    dshotUserInputValue = dshotidle + (currentTime-15000)*(dshot50)/10000.0;        
+    } 
+  else if(currentTime >= 25000 && currentTime < 145000) {
+    dshotUserInputValue = dshot50;
+    }        
+  else if(currentTime >= 145000 && currentTime < 150000) {
+    printTelemetry = false;
+    dshotUserInputValue = 0;
+    }
+  }
+void testProgram_30sec_50() {
+  currentTime = millis()-startTime;
+  if(currentTime >= 10000 && currentTime < 15000) {
+    dshotUserInputValue = dshotidle;
+    }
+  else if(currentTime >= 15000 && currentTime < 25000) {      
+    dshotUserInputValue = dshotidle + (currentTime-15000)*(dshot50)/10000.0;        
+    } 
+  else if(currentTime >= 25000 && currentTime < 55000) {
+    dshotUserInputValue = dshot50;
+    }        
+  else if(currentTime >= 55000 && currentTime < 60000) {
+    printTelemetry = false;
+    dshotUserInputValue = 0;
+    }
+  }
+
+void testProgram_2min_75() {
+  currentTime = millis()-startTime;
+  if(currentTime >= 10000 && currentTime < 15000) {
+    dshotUserInputValue = dshotidle;
+    }
+  else if(currentTime >= 15000 && currentTime < 25000) {      
+    dshotUserInputValue = dshotidle + (currentTime-15000)*(dshot75)/10000.0;        
+    } 
+  else if(currentTime >= 25000 && currentTime < 145000) {
+    dshotUserInputValue = dshot75;
+    }        
+  else if(currentTime >= 145000 && currentTime < 150000) {
+    printTelemetry = false;
+    dshotUserInputValue = 0;
+    }
+  }
