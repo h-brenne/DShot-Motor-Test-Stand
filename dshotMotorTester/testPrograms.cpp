@@ -227,19 +227,34 @@ void testProgram_fulltest() {
   if(currentTime >= 10000 && currentTime < 15000) {
     dshotUserInputValue = dshotidle;
     }
-  if(currentTime >= 15000 && currentTime < 17000) {
+  else if(currentTime >= 15000 && currentTime < 15100) {
+    dshotUserInputValue = dshotidle + (currentTime-15000)*(dshot30-dshotidle)/100;
+    } 
+  else if(currentTime >= 15100 && currentTime < 17000) {
     dshotUserInputValue = dshot30;
-    } 
-  else if(currentTime >= 17000 && currentTime < 19000) {
+    }
+  else if(currentTime >= 17000 && currentTime < 17100) {
+   dshotUserInputValue = dshot30 + (currentTime-17000)*(dshot40-dshot30)/100;
+   } 
+  else if(currentTime >= 17100 && currentTime < 19000) {
     dshotUserInputValue = dshot40;
-    } 
-  else if(currentTime >= 19000 && currentTime < 21000) {
+  }
+   else if(currentTime >= 19000 && currentTime < 19100) {
+    dshotUserInputValue = dshot40 + (currentTime-19000)*(dshot50-dshot40)/100;
+   }
+  else if(currentTime >= 19100 && currentTime < 21000) {
     dshotUserInputValue = dshot50;
-    } 
-  else if(currentTime >= 21000 && currentTime < 23000) {
+    }
+   else if(currentTime >= 21000 && currentTime < 21100) {
+    dshotUserInputValue = dshot50 + (currentTime-21000)*(dshot75-dshot50)/100;
+   }
+  else if(currentTime >= 21100 && currentTime < 23000) {
     dshotUserInputValue = dshot75;
     } 
-  else if(currentTime >= 23000 && currentTime < 25000) {
+   else if(currentTime >= 23000 && currentTime < 23100) {
+    dshotUserInputValue = dshot75 + (currentTime-23000)*(dshot100-dshot75)/100;
+   }
+  else if(currentTime >= 23100 && currentTime < 25000) {
     dshotUserInputValue = dshot100;
     } 
   else if(currentTime >= 25000 && currentTime < 27000) {
